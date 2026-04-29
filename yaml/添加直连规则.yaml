@@ -1,6 +1,4 @@
-# 添加直连规则示例
-
-+rules:
+# 添加Steam直连规则示例
   - "PROCESS-NAME,steam.exe,\U0001F3AF 绕过代理"
   - "DOMAIN-SUFFIX,steampowered.com,\U0001F3AF 绕过代理"
   - "DOMAIN-SUFFIX,steamcommunity.com,\U0001F3AF 绕过代理"
