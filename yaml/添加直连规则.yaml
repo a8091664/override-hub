@@ -1,5 +1,17 @@
 # 添加直连规则示例
 
 +rules:
-  - "DOMAIN-SUFFIX,baidu.com,DIRECT"
-  - "DOMAIN-SUFFIX,tencent.com,DIRECT"
+  - "PROCESS-NAME,steam.exe,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steampowered.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamcommunity.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamgames.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamusercontent.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamcontent.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamstatic.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamstore-a.akamaihd.net,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,valvesoftware.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steamcontent.tnkjm.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,dl.steam.cl.qq.com,\U0001F3AF 绕过代理"
+  - "DOMAIN-SUFFIX,steam.qq.com,\U0001F3AF 绕过代理"
