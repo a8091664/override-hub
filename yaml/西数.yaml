@@ -1,18 +1,23 @@
-# 添加steam直连规则示例
-
 +rules:
-  - PROCESS-NAME,steam.exe,DIRECT
-  - DOMAIN-SUFFIX,steampowered.com,DIRECT
-  - DOMAIN-SUFFIX,steamcommunity.com,DIRECT
-  - DOMAIN-SUFFIX,steamgames.com,DIRECT
-  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+  # —— Steam 登录/商店/社区：走代理（放前面，优先匹配）——
+  - DOMAIN-SUFFIX,steampowered.com,Proxies
+  - DOMAIN-SUFFIX,steamcommunity.com,Proxies
+  - DOMAIN-SUFFIX,steamstatic.com,Proxies
+  - DOMAIN-SUFFIX,steamusercontent.com,Proxies
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net,Proxies
+  - DOMAIN-SUFFIX,steamstore-a.akamaihd.net,Proxies
+  - DOMAIN-SUFFIX,steam-chat.com,Proxies
+  - DOMAIN-SUFFIX,valvesoftware.com,Proxies
+
+  # —— Steam 下载/更新 CDN：直连，省流量——
   - DOMAIN-SUFFIX,steamcontent.com,DIRECT
-  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
   - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,steamstore-a.akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,valvesoftware.com,DIRECT
   - DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT
   - DOMAIN-SUFFIX,dl.steam.cl.qq.com,DIRECT
   - DOMAIN-SUFFIX,steam.qq.com,DIRECT
+
+  # —— 客户端本体兜底走代理（防止漏网小流量走直连白屏）——
+  - PROCESS-NAME,steam.exe,Proxies
+
+  # —— 漫画站——
   - DOMAIN-SUFFIX,manhuagui.com,Proxies
