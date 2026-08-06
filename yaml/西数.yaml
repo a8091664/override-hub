@@ -1,0 +1,18 @@
+# 添加steam直连规则示例
+
++rules:
+  - PROCESS-NAME,steam.exe,DIRECT
+  - DOMAIN-SUFFIX,steampowered.com,DIRECT
+  - DOMAIN-SUFFIX,steamcommunity.com,DIRECT
+  - DOMAIN-SUFFIX,steamgames.com,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamstatic.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamstore-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,valvesoftware.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT
+  - DOMAIN-SUFFIX,dl.steam.cl.qq.com,DIRECT
+  - DOMAIN-SUFFIX,steam.qq.com,DIRECT
+  - DOMAIN-SUFFIX,manhuagui.com,Proxies
