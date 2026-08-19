@@ -1,0 +1,41 @@
+function main(config) {
+  const steamDirect = [
+    // —— Steam 登录/CM：必须直连，让 Steam 看到中国 IP ——
+    "DOMAIN-SUFFIX,cm.steampowered.com,DIRECT",
+    "DOMAIN-SUFFIX,steamserver.net,DIRECT",
+    "DOMAIN,steamcdn-a.akamaihd.net,DIRECT",
+    // —— 下载 CDN：直连 ——
+    "DOMAIN-SUFFIX,steamcontent.com,DIRECT",
+    "DOMAIN-SUFFIX,steamcontent.tnkjmec.com,DIRECT",
+    "DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT",
+    "DOMAIN-SUFFIX,steampipe.akamaized.net,DIRECT",
+    "DOMAIN-SUFFIX,steampipe-partner.akamaized.net,DIRECT",
+    "DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT",
+    "DOMAIN-SUFFIX,steamvideo-a.akamaihd.net,DIRECT",
+    "DOMAIN-SUFFIX,steambroadcast.akamaized.net,DIRECT",
+    "DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net,DIRECT",
+    "DOMAIN-SUFFIX,st.dl.eccdnx.com,DIRECT",
+    "DOMAIN-SUFFIX,st.dl.bscstorage.net,DIRECT",
+    "DOMAIN-SUFFIX,st.dl.pinyuncloud.com,DIRECT",
+    "DOMAIN-SUFFIX,dl.steam.clngaa.com,DIRECT",
+    "DOMAIN-SUFFIX,dl.steam.ksyna.com,DIRECT",
+    "DOMAIN-SUFFIX,cdn-ali.content.steamchina.com,DIRECT",
+    "DOMAIN-SUFFIX,cdn-qc.content.steamchina.com,DIRECT",
+    "DOMAIN-SUFFIX,cdn-ws.content.steamchina.com,DIRECT",
+    "DOMAIN-SUFFIX,wmsjsteam.com,DIRECT",
+    "DOMAIN-SUFFIX,steam.apac.qtlglb.com,DIRECT",
+    "DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net,DIRECT",
+    // —— 商店/社区页面：走代理（可以打开网页）——
+    "DOMAIN-SUFFIX,store.steampowered.com,Proxies",
+    "DOMAIN-SUFFIX,steamcommunity.com,Proxies",
+    "DOMAIN-SUFFIX,steamstatic.com,Proxies",
+    "DOMAIN-SUFFIX,steam-chat.com,Proxies",
+    "DOMAIN-SUFFIX,s.team,Proxies",
+    "DOMAIN-SUFFIX,valvesoftware.com,Proxies",
+    // —— 漫画站 ——
+    "DOMAIN-SUFFIX,manhuagui.com,Proxies",
+    "DOMAIN-SUFFIX,hamreus.com,Proxies",
+  ];
+  config.rules = steamDirect.concat(config.rules || []);
+  return config;
+}
