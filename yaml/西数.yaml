@@ -1,5 +1,16 @@
-+rules:
-  # —— Steam 登录/商店/社区/API：走代理——
+prepend-rules:
+  # —— Steam 游戏下载/更新：直连 ——
+  # 必须优先于机场原有 Steam 规则
+
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT
+  - DOMAIN-SUFFIX,steamcontent.tnkjmec.com,DIRECT
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+  - DOMAIN-SUFFIX,steampipe.akamaized.net,DIRECT
+  - DOMAIN-SUFFIX,steamserver.net,DIRECT
+
+  # —— Steam 登录/商店/社区/API：走代理 ——
+
   - DOMAIN-SUFFIX,steampowered.com,Proxies
   - DOMAIN-SUFFIX,steamcommunity.com,Proxies
   - DOMAIN-SUFFIX,steamstatic.com,Proxies
@@ -9,18 +20,8 @@
   - DOMAIN-SUFFIX,steam-chat.com,Proxies
   - DOMAIN-SUFFIX,valvesoftware.com,Proxies
   - DOMAIN-SUFFIX,steamapi.com,Proxies
+  - DOMAIN-SUFFIX,steam-api.com,Proxies
   - DOMAIN-SUFFIX,steamgames.com,Proxies
-
-
-  # —— Steam 下载 CDN：直连——
-  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
-  - DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT
-  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,akamaihd.net,DIRECT
-  - DOMAIN-SUFFIX,steamserver.net,DIRECT
-  - DOMAIN-SUFFIX,steampipe.steamcontent.com,DIRECT
-  - DOMAIN-SUFFIX,dl.steam.cl.qq.com,DIRECT
-  - DOMAIN-SUFFIX,steam.qq.com,DIRECT
 
   # —— 漫画站——
   - DOMAIN-SUFFIX,manhuagui.com,Proxies
