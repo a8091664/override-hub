@@ -1,7 +1,6 @@
 prepend-rules:
   # —— Steam 游戏下载/更新：直连 ——
   # 必须优先于机场原有 Steam 规则
-
   - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - DOMAIN-SUFFIX,steamcontent.tnkjm.com,DIRECT
   - DOMAIN-SUFFIX,steamcontent.tnkjmec.com,DIRECT
@@ -10,7 +9,6 @@ prepend-rules:
   - DOMAIN-SUFFIX,steamserver.net,DIRECT
 
   # —— Steam 登录/商店/社区/API：走代理 ——
-
   - DOMAIN-SUFFIX,steampowered.com,Proxies
   - DOMAIN-SUFFIX,steamcommunity.com,Proxies
   - DOMAIN-SUFFIX,steamstatic.com,Proxies
