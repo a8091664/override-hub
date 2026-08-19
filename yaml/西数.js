@@ -34,6 +34,7 @@ function main(config) {
     "DOMAIN-SUFFIX,valvesoftware.com,Proxies",
     // —— 漫画站 ——
     "DOMAIN-SUFFIX,manhuagui.com,Proxies",
+    "DOMAIN-SUFFIX,hamreus.com,Proxies",
   ];
   config.rules = steamDirect.concat(config.rules || []);
   return config;
