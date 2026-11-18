@@ -36,7 +36,6 @@ function main(config) {
     "DOMAIN-SUFFIX,manhuagui.com,Proxies",
     "DOMAIN-SUFFIX,hamreus.com,Proxies",
     // —— 这里放需要直连的 ——
-    "DOMAIN-SUFFIX,kick.com,DIRECT",
   ];
   config.rules = steamDirect.concat(config.rules || []);
   return config;
